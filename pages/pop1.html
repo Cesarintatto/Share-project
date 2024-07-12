@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pop-1</title>
+        <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <meta name="description" content="Promoción Activa Frisby-Hit">
+
+        <script src="https://kit.fontawesome.com/824efb27a7.js" crossorigin="anonymous"></script>
+        
+
+    </head>
+    <body>
+        <header>
+            
+        </header>
+        <main id="pop-up1">
+            <div class="bg-blur"></div>
+            <section class="pop-contain">
+                <div class="pop-up">
+                    <h3>Recuerda que estás participando por</h3>
+                    <picture>
+                        <img src="../assets/images/squere-modal.png" alt="">
+                    </picture>
+                    <i class="fa-solid fa-circle-xmark close-icon" id="close"></i>
+                </div>
+            </section>
+        </main>
+        <script>
+            var botonCerrar = document.getElementById("close");
+
+            botonCerrar.addEventListener("click", function() {
+            // Envía un mensaje a la página principal
+            window.parent.postMessage("cerrarModal", "*");
+            });
+        </script>
+        <footer class="footer">
+            
+        </footer>
+    </body>
+</html>

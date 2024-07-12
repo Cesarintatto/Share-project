@@ -8,6 +8,7 @@
         <meta name="description" content="Promoción Activa Frisby-Hit">
 
         <script src="https://kit.fontawesome.com/824efb27a7.js" crossorigin="anonymous"></script>
+        <script src="js/app.js" defer></script>
 
     </head>
     <body>
@@ -26,6 +27,10 @@
             </div>
         </header>
         <main>
+            <!--Intento de modal-->
+            <div class="modal" id="miModal">
+                <iframe src="pages/pop1.html"></iframe>
+            </div>
 
             <div class="title-main">
                 <h3>UN AÑO DE FRISBY GRATIS</h3>
@@ -50,7 +55,7 @@
                 </picture>
             </div>
             <div class="button-cta">
-                <button>CTA</button>
+                <button onclick="openPopUp ()">CTA</button>
             </div>
             <div class="promo-contain">
                 <picture>
@@ -67,8 +72,12 @@
                 <button>CTA</button>
             </div>
         </main>
-        <footer>
-        
+        <footer class="footer">
+            <picture class="network-footer">
+                <img src="assets/images/facebook-logo.svg" alt="facebook-login">
+                <img src="assets/images/google-logo.svg" alt="google-login">
+                <img src="assets/images/x-logo.png" alt="x-login">
+            </picture>
         </footer>
     </body>
 </html>
